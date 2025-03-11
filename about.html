@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./static/style.css" />
     <title>No Name Store</title>
-    <link rel="shortcut icon" href="/assets/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/logo.png" type="image/x-icon" />
   </head>
 
   <body>
     <header>
-      <img src="/assets/logo.png" alt="store logo" width="50" height="50" />
+      <img src="/assets/logo.png" alt="store logo" />
       <h1>No name Store</h1>
       <nav>
         <a href="/index.html">Home</a>
@@ -18,10 +19,9 @@
         <a href="#">Contact</a>
       </nav>
     </header>
-
-    <main>
-      <h2>About Us</h2>
-      <p>
+    <main class="mainAbout">
+      <h2 class="aboutTitle">About Us</h2>
+      <p class="aboutDesciption">
         At No Name Store, we're passionate about sports and fitness. We believe
         that everyone should have the opportunity to live a healthy and active
         lifestyle. That's why we're committed to providing our customers with
@@ -32,45 +32,73 @@
         expertise to help you succeed.
       </p>
 
-      <section>
+      <section class="team">
         <h3>Our Team</h3>
         <p>
           Our team is made up of experienced athletes and fitness enthusiasts
           who are dedicated to helping our customers achieve their goals.
         </p>
-        <div>
-            <img src="/assets/genrenteventas.png" alt="sales manager" width="150">
-            <p>George Hills</p>
-            <p><span style="font-style: italic; font-size: 12px;">Sales Manager</span></p>
+        <div class="teamCard">
+          <img
+            class="photo"
+            src="/assets/genrenteventas.png"
+            alt="sales manager"
+          />
+          <p>George Hills</p>
+          <p><span>Sales Manager</span></p>
         </div>
-        <div>
-            <img src="/assets/gerentedeportes.png" alt="sports manager" width="150">
-            <p>Michael White</p>
-            <p><span style="font-style: italic; font-size: 12px;">Sports Manager</span></p>
+        <div class="teamCard">
+          <img
+            class="photo"
+            src="/assets/gerentedeportes.png"
+            alt="sports manager"
+          />
+          <p>Michael White</p>
+          <p><span>Sports Manager</span></p>
         </div>
-        <div>
-            <img src="assets/directora.png" alt="chief director" width="150">
-            <p>Sophie Carter</p>
-            <p><span style="font-style: italic; font-size: 12px;">Chief Director</span></p>
+        <div class="teamCard">
+          <img class="photo" src="assets/directora.png" alt="chief director" />
+          <p>Sophie Carter</p>
+          <p><span>Chief Director</span></p>
         </div>
       </section>
-      <section>
+      <section class="values">
         <h3>Our Values</h3>
-        <p><span style="font-weight: bold;">Passion for Sports:</span>
+        <div class="valuesDescription"> 
+          <p>
+            <span >Passion for Sports:</span>
 
-            At our store, we share your enthusiasm for sport. From experienced athletes to beginners, we are passionate about helping you reach your goals. Our team is made up of people who love sports and understand your needs, providing you with expert advice and quality products so you can enjoy your favorite activity to the fullest.
-        </p>
-        <p><span style="font-weight: bold;">Quality and Trust:</span>
-            We are committed to offering you the highest quality products, from recognized and trusted brands. Every item in our store has been carefully selected to ensure durability, performance and safety. We want you to feel confident in choosing us, knowing that you are investing in equipment that will be with you every step of the way on your athletic journey
-        </p>
-        <p><span style="font-weight: bold;">Community and Support:</span>
-            We believe in the power of sport to bring people together and build strong communities. Our store is more than just a place to buy equipment; it's a gathering place for sports enthusiasts. We strive to create a welcoming and friendly environment where you can share your experiences, receive support and find the motivation to push your limits. In addition, we are committed to supporting local organizations that promote sport and physical activity in our community.
-
-        </p>
+            At our store, we share your enthusiasm for sport. From experienced
+            athletes to beginners, we are passionate about helping you reach
+            your goals. Our team is made up of people who love sports and
+            understand your needs, providing you with expert advice and quality
+            products so you can enjoy your favorite activity to the fullest.
+          </p>
+          <p>
+            <span >Quality and Trust:</span>
+            We are committed to offering you the highest quality products, from
+            recognized and trusted brands. Every item in our store has been
+            carefully selected to ensure durability, performance and safety. We
+            want you to feel confident in choosing us, knowing that you are
+            investing in equipment that will be with you every step of the way
+            on your athletic journey
+          </p>
+          <p>
+            <span s>Community and Support:</span>
+            We believe in the power of sport to bring people together and build
+            strong communities. Our store is more than just a place to buy
+            equipment; it's a gathering place for sports enthusiasts. We strive
+            to create a welcoming and friendly environment where you can share
+            your experiences, receive support and find the motivation to push
+            your limits. In addition, we are committed to supporting local
+            organizations that promote sport and physical activity in our
+            community.
+          </p>
+        </div>
       </section>
     </main>
     <footer>
-        <h6> &copy; No Name Store. All rigths reserved.</h6>
+      <h6>&copy; No Name Store. All rigths reserved.</h6>
     </footer>
   </body>
 </html>
