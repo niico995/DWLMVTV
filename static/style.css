@@ -31,7 +31,10 @@ header h1 {
     font-size: 48px;
     margin-left: 36%;
     padding-top: 15px;
+
+    
 }
+
 
 header nav { 
     background-color: rgb(121, 29, 168);
@@ -69,7 +72,24 @@ header nav a:hover {
 }
 .hero h2 { 
     font-size: 38px;
+    animation: wave 3s ease-in-out infinite;
 }
+
+@keyframes wave {
+    0%, 100% {
+        text-shadow: 
+            0 0 0 #747474,
+            0 -10px 0 #ff9eea,
+            0 -15px 0 #ffcceb;
+    }
+    50% {
+        text-shadow: 
+            0 1px 0 #6d6d6d,
+            0 0 0 #8a8a8a,
+            0 -5px 0 #7c7c7c;
+    }
+}
+
 
 
 .productsCards {
@@ -93,6 +113,35 @@ header nav a:hover {
     justify-content: center;
     align-items: center;
 }
+
+.cards article:hover {
+    animation: grow 2s infinite;
+}
+
+@keyframes grow {
+    0% {
+        z-index: 10;
+        box-shadow: 2px 2px 4px rgb(207, 67, 189);
+    }
+
+    20%{
+        z-index: 10;
+        box-shadow: 2.5px 2.5px 4px rgb(192, 41, 142);
+    }
+    50% {
+        z-index: 10;
+        box-shadow: 3px 3px 4px rgb(211, 18, 147);
+    }
+    80% {
+        z-index: 10;
+        box-shadow: 3.5px 3.5px 4px rgb(224, 8, 152);
+    }
+    100%{
+        z-index: 10;
+        box-shadow: 2px 2px 4px rgb(207, 67, 189);
+    }
+}
+
 
 .cards article {
     display: flex;
@@ -145,6 +194,7 @@ header nav a:hover {
     background-color: rgb(121, 29, 168);
     color: #fff;
     text-decoration: none;
+    justify-content: center;
     align-items: center;
     border-radius: 10px;
     width: 120px;
@@ -352,4 +402,222 @@ footer {
 
 .benefits tr:nth-child(even) {
     background-color: #f2f2f2;
+}
+
+
+/*  Contact  */
+
+.contactMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.contactMain form {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    box-shadow: 4px 4px 4px rgb(121, 29, 168);
+    border: 2px rgb(109, 7, 112) solid;
+    border-radius: 15px;
+    min-width: 400px;
+    padding: 10px;
+}
+.contactMain form label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.contactMain form textarea {
+    min-height: 150px;
+    resize: none;
+}
+
+.clientInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.clientInfo label {
+    display: flex;
+    flex-direction: column;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.btn {
+    width: 150px;
+    background-color: rgb(28, 218, 28);
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    border: none;
+    border-radius: 15px;
+    height: 40px;
+    padding: 8px;
+}
+
+.rst {
+    background-color: rgb(151, 16, 163);
+    color: white;
+}
+
+iframe {
+    margin: 20px;
+}
+
+
+
+
+
+/* RESPONSIVE STYLES */
+
+/* Tablet Styles (768px to 1023px) */
+@media screen and (max-width: 1023px) {
+    header div {
+        flex-direction: column;
+    }
+    
+    header h1 {
+        margin-left: 0;
+        font-size: 36px;
+    }
+    
+    .hero h2 {
+        font-size: 32px;
+    }
+    
+    .cards article {
+        width: 45%;
+    }
+    
+    .actionCategories {
+        width: 250px;
+        height: 250px;
+    }
+    
+    /* About page */
+    .aboutDesciption, .valuesDescription {
+        width: 80%;
+    }
+    
+    .teamCard {
+        width: 45%;
+    }
+    
+    /* Products page */
+    .mainContainer {
+        flex-direction: column;
+    }
+    
+    .categoriesFilter {
+        width: 100%;
+    }
+    
+    .productsList {
+        width: 100%;
+    }
+}
+
+/* Mobile Styles (up to 767px) */
+@media screen and (max-width: 767px) {
+    header nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+    
+    header nav a {
+        margin: 5px 0;
+    }
+    
+    header h1 {
+        font-size: 28px;
+    }
+    
+    .hero {
+        height: 200px;
+    }
+    
+    .hero h2 {
+        font-size: 24px;
+    }
+    
+    .productsCards h2, section h2, .team h3, .values h3 {
+        font-size: 24px;
+    }
+    
+    .cards article {
+        width: 100%;
+        min-height: auto;
+    }
+    
+    .cards h3 {
+        font-size: 20px;
+    }
+    
+    .categories div {
+        flex-direction: column;
+    }
+    
+    .actionCategories {
+        width: 100%;
+        max-width: 300px;
+        height: 200px;
+        margin: 10px 0;
+    }
+    
+    /* About page */
+    .aboutDesciption, .valuesDescription {
+        width: 90%;
+    }
+    
+    .teamCard {
+        width: 100%;
+    }
+    
+    /* Contact page */
+    .contactMain form {
+        min-width: 90%;
+        width: 90%;
+    }
+    
+    .btns {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    iframe {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+/* Small Mobile Styles (up to 480px) */
+@media screen and (max-width: 480px) {
+    header img {
+        width: 80px;
+    }
+    
+    header h1 {
+        font-size: 24px;
+    }
+    
+    .hero h2 {
+        font-size: 20px;
+    }
+    
+    .hero p {
+        font-size: 14px;
+    }
 }

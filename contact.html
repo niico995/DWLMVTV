@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/style.css" />
+    <title>No Name Store</title>
+    <link rel="shortcut icon" href="/assets/logo.png" type="image/x-icon" />
+</head>
+<body>
+    <header>
+        <div>
+          <img src="/assets/logo.png" alt="store logo" />
+          <h1>No name Store</h1>
+        </div>
+        
+        <nav>
+          <a href="/index.html">Home</a>
+          <a href="/products.html">Products</a>
+          <a href="/about.html">About Us</a>
+          <a href="#" class="this">Contact</a>
+        </nav>
+      </header>
+
+      <main class="contactMain">
+            <h2>Contact</h2>
+            <form action="https://aulamindhub.github.io/dwm_show_data/show_data.html"  method="get" target="_blank">
+              <div class="clientInfo">
+                <label for="name">
+                  Name:
+                  <input id="name" name="name" type="text" required>
+                </label>
+                <label for="email">
+                  Email:
+                  <input id="email" name="email" type="email" required> 
+                </label>
+              </div>
+              <p>
+                Interested category:
+                </p>
+                <div>
+                  <label>
+                    Shoes
+                    <input type="checkbox" name="category"  value="shoes" >
+                  </label>
+                  <label>
+                    Yoga
+                    <input type="checkbox" name="category"  value="yoga">
+                  </label>
+                  <label>
+                    Exercise equipment
+                    <input type="checkbox" name="category"  value="exercise equipment">
+                  </label>
+                  <label>
+                    Outdoor sports
+                    <input type="checkbox" name="category"  value="outdoor sports">
+                  </label>
+                </div>
+                <textarea name="message" id="message" placeholder=" Message"></textarea>
+                <div>
+
+                  <p>
+                    I want to suscribe
+                  </p>
+                  <label >Yes
+                  <input type="radio" name="suscribe" value="yes" required>
+                  </label>
+                  <label >
+                    No
+                    <input type="radio" name="suscribe" value="no">
+                  </label>
+                </p>
+                </div>
+                <div class="btns">
+                  <button class="btn rst"  type="Reset" >Reset</button>
+                  <button class="btn" type="submit">Send</button>
+                </div>
+                  
+            </form>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13135.985039586423!2d-58.38618807643592!3d-34.60425608441602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccadad85a755b%3A0x596a2eade487263a!2sPalacio%20Barolo!5e0!3m2!1ses!2sar!4v1744833273633!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </main>   
+      <footer>
+        <h6>&copy; No Name Store. All rigths reserved.</h6>
+      </footer>
+</body>
+</html>
